@@ -1,0 +1,93 @@
+<testsuite failures="1" name="src/test/java/tests/karateDemo.feature" skipped="0" tests="4" time="1.590795">
+  <testcase classname="src.test.java.tests.karateDemo" name="Get second user" time="0.876554">
+    <system-out>* url 'https://reqres.in/' ................................................ passed
+Given path 'api/users/2' .................................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* assert response.data.id == 2 ............................................ passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.tests.karateDemo" name="Post user information" time="0.357646">
+    <system-out>* url 'https://reqres.in/' ................................................ passed
+Given path 'api/users/2' .................................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* assert response.data.id == 2 ............................................ passed
+* url 'https://reqres.in/' ................................................ passed
+Given path 'api/users' .................................................... passed
+* def data = .............................................................. passed
+Then request data ......................................................... passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+And print response ........................................................ passed
+And match $ contains {first_name:'Mars'} .................................. passed
+* match  $.first_name == 'Mars' ........................................... passed
+* match $ contains {id: #notnull} ......................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.tests.karateDemo" name="Update third user's first name" time="0.343305">
+    <system-out>* url 'https://reqres.in/' ................................................ passed
+Given path 'api/users/2' .................................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* assert response.data.id == 2 ............................................ passed
+* url 'https://reqres.in/' ................................................ passed
+Given path 'api/users' .................................................... passed
+* def data = .............................................................. passed
+Then request data ......................................................... passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+And print response ........................................................ passed
+And match $ contains {first_name:'Mars'} .................................. passed
+* match  $.first_name == 'Mars' ........................................... passed
+* match $ contains {id: #notnull} ......................................... passed
+* url 'https://reqres.in/' ................................................ passed
+Given path 'api/users/3' .................................................. passed
+* def data = .............................................................. passed
+Then request data ......................................................... passed
+When method PUT ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match $ contains {first_name:'Dünya'} ................................. passed
+* match $.first_name == 'Dünya' ........................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.tests.karateDemo" name="Delete second user's information" time="0.013289">
+    <failure message="karateDemo.feature:61 - evaluation (js) failed: baseURL, javax.script.ScriptException: ReferenceError: &quot;baseURL&quot; is not defined in &lt;eval&gt; at line number 1&#10;stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)">* url 'https://reqres.in/' ................................................ passed
+Given path 'api/users/2' .................................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+* assert response.data.id == 2 ............................................ passed
+* url 'https://reqres.in/' ................................................ passed
+Given path 'api/users' .................................................... passed
+* def data = .............................................................. passed
+Then request data ......................................................... passed
+When method POST .......................................................... passed
+Then status 201 ........................................................... passed
+And print response ........................................................ passed
+And match $ contains {first_name:'Mars'} .................................. passed
+* match  $.first_name == 'Mars' ........................................... passed
+* match $ contains {id: #notnull} ......................................... passed
+* url 'https://reqres.in/' ................................................ passed
+Given path 'api/users/3' .................................................. passed
+* def data = .............................................................. passed
+Then request data ......................................................... passed
+When method PUT ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match $ contains {first_name:'Dünya'} ................................. passed
+* match $.first_name == 'Dünya' ........................................... passed
+* url 'https://reqres.in/' ................................................ passed
+Given url baseURL ......................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: karateDemo.feature:61 - evaluation (js) failed: baseURL, javax.script.ScriptException: ReferenceError: "baseURL" is not defined in &lt;eval&gt; at line number 1
+stack trace: jdk.nashorn.api.scripting.NashornScriptEngine.throwAsScriptException(NashornScriptEngine.java:470)&#13;
+	at ✽.Given url baseURL (karateDemo.feature:61)&#13;
+
+When method DELETE ........................................................ skipped
+Then status 204 ........................................................... skipped
+And print response ........................................................ skipped</failure>
+  </testcase>
+</testsuite>

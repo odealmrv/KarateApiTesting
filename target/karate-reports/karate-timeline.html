@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/tests\/karateDemo[1:7]","start":1668087757147,"end":1668087758041,"title":"src\/test\/java\/tests\/karateDemo[1:7] 16:42:37.147-16:42:38.041 Get second user"},{"id":2,"group":1,"content":"src\/test\/java\/tests\/karateDemo[2:17]","start":1668087758047,"end":1668087758473,"title":"src\/test\/java\/tests\/karateDemo[2:17] 16:42:38.047-16:42:38.473 Post user information"},{"id":3,"group":1,"content":"src\/test\/java\/tests\/karateDemo[3:39]","start":1668087758478,"end":1668087758769,"title":"src\/test\/java\/tests\/karateDemo[3:39] 16:42:38.478-16:42:38.769 Update third user's first name"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
