@@ -1,34 +1,44 @@
-16:44:13.558 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
-16:44:13.945 request:
-1 > GET https://reqres.in/api/users/2
+17:37:59.627 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+17:38:00.128 request:
+1 > POST https://reqres.in/api/users
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
+1 > Content-Length: 70
+1 > Content-Type: application/json; charset=UTF-8
 1 > Host: reqres.in
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_332)
+{"last_name":" ","id":"","avatar":" ","first_name":"Mars","email":" "}
 
-16:44:14.394 response time in milliseconds: 445,91
-1 < 200
+17:38:00.648 response time in milliseconds: 518,15
+1 < 201
 1 < Access-Control-Allow-Origin: *
-1 < Age: 4144
-1 < CF-Cache-Status: HIT
-1 < CF-RAY: 767f38bbed749a09-FRA
-1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 76c1727a2afe9963-FRA
 1 < Connection: keep-alive
+1 < Content-Length: 112
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Thu, 10 Nov 2022 13:44:13 GMT
-1 < Etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
+1 < Date: Fri, 18 Nov 2022 14:37:58 GMT
+1 < Etag: W/"70-n9+yXLuhY7Af/0LuGmPNisOPbVc"
 1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=bL7h9Y6kCx9%2FTwYvUIvc4un3chFOGrR7bc4ulHC%2FGvr55k1MLqOWrEeGkRoYptWL%2F2jFIBevXHBdj2H%2F3itIHfZqUTBBEAB90KbY9ejQvu4Clis%2FutGN2oxZ%2Fw%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=tLX7yMmuIxnlvPMR2y8zaYpPxa1r7JH5aTnSGiWs05OG4uECkL%2BU03KSbgEHgKQKarpCmd0iGsumRFoi5ueZ3RK2uV70wnypjyDewkVEcNDHR1%2FAVdrdHdEXiA%3D%3D"}],"group":"cf-nel","max_age":604800}
 1 < Server: cloudflare
-1 < Transfer-Encoding: chunked
-1 < Vary: Accept-Encoding
 1 < Via: 1.1 vegur
 1 < X-Powered-By: Express
-{"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+{"last_name":" ","id":"425","avatar":" ","first_name":"Mars","email":" ","createdAt":"2022-11-18T14:37:58.807Z"}
 
-16:44:14.436 [print] {
-  "data": {
-    "last_name": "Weaver",
+17:38:00.649 [print] {
+  "createdAt": "2022-11-18T14:37:58.807Z",
+  "last_name": " ",
+  "id": "425",
+  "avatar": " ",
+  "first_name": "Mars",
+  "email": " "
+}
+
+
+}
+
+,
     "id": 2,
     "avatar": "https://reqres.in/img/faces/2-image.jpg",
     "first_name": "Janet",
@@ -40,8 +50,8 @@
   }
 }
 
-16:44:14.446 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
-16:44:14.453 request:
+17:35:59.973 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+17:35:59.980 request:
 1 > POST https://reqres.in/api/users
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
@@ -51,34 +61,34 @@
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_332)
 {"last_name":" ","id":"","avatar":" ","first_name":"Mars","email":" "}
 
-16:44:14.800 response time in milliseconds: 346,32
+17:36:00.335 response time in milliseconds: 354,20
 1 < 201
 1 < Access-Control-Allow-Origin: *
 1 < CF-Cache-Status: DYNAMIC
-1 < CF-RAY: 767f38bdfb1b9237-FRA
+1 < CF-RAY: 76c16f8a290990b2-FRA
 1 < Connection: keep-alive
 1 < Content-Length: 112
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Thu, 10 Nov 2022 13:44:13 GMT
-1 < Etag: W/"70-jq+hygPwnGgIKcbDVNqXPZZBpUQ"
+1 < Date: Fri, 18 Nov 2022 14:35:58 GMT
+1 < Etag: W/"70-MeC2OgcyU8+X2SAH//BdNJs/J68"
 1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Wro5vyVFSFWR7L%2FF87KWE0QV4%2BXOZVo%2FO%2BZ292cuBPkjBDTUrcjA7CmeBwDLtPunrcyTO7Oginbibw3SrcBkanuVQSRWYUhqOF4OUk5lNMemFGdOPK3H2L7DAA%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=GPUX45eTA4WEcq4raSXTv8JMniUCzDqMR7Qf%2F73ma2cxSIkASHPo6FtI4%2BS4PfHLx5SnhdAgsn0vIEWKQk2v2zTsFtaUA98UT6exV%2FqSbA3021QRqrTOWeF0Mg%3D%3D"}],"group":"cf-nel","max_age":604800}
 1 < Server: cloudflare
 1 < Via: 1.1 vegur
 1 < X-Powered-By: Express
-{"last_name":" ","id":"865","avatar":" ","first_name":"Mars","email":" ","createdAt":"2022-11-10T13:44:13.840Z"}
+{"last_name":" ","id":"389","avatar":" ","first_name":"Mars","email":" ","createdAt":"2022-11-18T14:35:58.477Z"}
 
-16:44:14.801 [print] {
-  "createdAt": "2022-11-10T13:44:13.840Z",
+17:36:00.336 [print] {
+  "createdAt": "2022-11-18T14:35:58.477Z",
   "last_name": " ",
-  "id": "865",
+  "id": "389",
   "avatar": " ",
   "first_name": "Mars",
   "email": " "
 }
 
-16:44:14.808 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
-16:44:14.811 request:
+17:36:00.343 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+17:36:00.346 request:
 1 > PUT https://reqres.in/api/users/3
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
@@ -88,31 +98,31 @@
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_332)
 {"last_name":" ","id":"","avatar":" ","first_name":"Dünya","email":" "}
 
-16:44:15.149 response time in milliseconds: 337,12
+17:36:00.650 response time in milliseconds: 304,19
 1 < 200
 1 < Access-Control-Allow-Origin: *
 1 < CF-Cache-Status: DYNAMIC
-1 < CF-RAY: 767f38c03c8e9a30-FRA
+1 < CF-RAY: 76c16f8c4bbdbb7a-FRA
 1 < Connection: keep-alive
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Thu, 10 Nov 2022 13:44:14 GMT
-1 < Etag: W/"6f-bMNFmJgjskrI/bEw4kbEg60MxNQ"
+1 < Date: Fri, 18 Nov 2022 14:35:58 GMT
+1 < Etag: W/"6f-26iuhIRYgWMoBWiebzObRXI0UL8"
 1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=jMxxxqq27xE9O45HOtOgGvD67bLdmPdk8Vw0quGtbLFHcZ2ilxON%2BPCK1tLBg6MbyqsA0OaeLHS5L2IDDGYZU9CToc7gi3z7JKczSbJJdezD6EYKrUzbp0xOwA%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=OTB1Pvx9ubc0j5cXEIyGT5AXd6ffBkB%2FY3mHYy1%2B4TFqC0%2BMYVBD9oUHQh%2F%2FmMl6eSys4m8zn%2F7blaNiMRNd4%2BD0yvCmKNz8Hi%2FhXWyebtMMbkn9rhb9R9Wy1w%3D%3D"}],"group":"cf-nel","max_age":604800}
 1 < Server: cloudflare
 1 < Transfer-Encoding: chunked
 1 < Vary: Accept-Encoding
 1 < Via: 1.1 vegur
 1 < X-Powered-By: Express
-{"last_name":" ","id":"","avatar":" ","first_name":"Dünya","email":" ","updatedAt":"2022-11-10T13:44:14.174Z"}
+{"last_name":" ","id":"","avatar":" ","first_name":"Dünya","email":" ","updatedAt":"2022-11-18T14:35:58.825Z"}
 
-16:44:15.149 [print] {
+17:36:00.651 [print] {
   "last_name": " ",
   "id": "",
   "avatar": " ",
   "first_name": "Dünya",
   "email": " ",
-  "updatedAt": "2022-11-10T13:44:14.174Z"
+  "updatedAt": "2022-11-18T14:35:58.825Z"
 }
 
-16:44:15.156 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+17:36:00.656 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
